@@ -81,16 +81,16 @@ const WeekdayDateRangePicker: React.FC<WeekdayDateRangePickerProps> = ({
       <h4 className="pb-10 text-2xl font-bold">Weekday Date Picker</h4>
       <div className="flex justify-center items-center">
         <button
-          className="bg-emerald-600 text-sm hover:bg-emerald-500 hover:border-none"
+          className="bg-emerald-600 text-sm text-slate-100  hover:bg-emerald-700 hover:border-none"
           onClick={() => handleMonthChange(-1)}
         >
           Prev Month
         </button>
-        <span className="m-4 text-zinc-100 text-bold">
+        <span className="m-4 text-zinc-800 text-bold">
           {months[displayMonth]} {displayYear}
         </span>
         <button
-          className="bg-emerald-600 text-sm hover:bg-emerald-500 hover:border-none"
+          className="bg-emerald-600 text-sm text-slate-100 hover:bg-emerald-700 hover:border-none"
           onClick={() => handleMonthChange(1)}
         >
           Next Month
@@ -111,7 +111,7 @@ const WeekdayDateRangePicker: React.FC<WeekdayDateRangePickerProps> = ({
         <div>
           {predefinedRanges?.map(({ label, range }) => (
             <button
-              className="m-2 bg-emerald-600 hover:bg-emerald-500 hover:border-none"
+              className="m-2 bg-emerald-600 text-slate-100  hover:bg-emerald-700 hover:border-none"
               key={label}
               onClick={() => handlePredefinedRangeSelection(range)}
             >
@@ -119,7 +119,7 @@ const WeekdayDateRangePicker: React.FC<WeekdayDateRangePickerProps> = ({
             </button>
           ))}
           <button
-            className="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 mx-8 rounded-full hover:border-none"
+            className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 mx-8 rounded-full hover:border-none"
             onClick={() => handleReset()}
           >
             Reset
