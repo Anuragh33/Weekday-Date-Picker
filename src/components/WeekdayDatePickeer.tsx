@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { isWeekend } from '../utils/isWeekend'
 import { getDatesInRange } from '../utils/getDatesInRange'
-import CalendarDays from './calenderDays'
+import CalendarDays from './CalenderDays'
 
 interface WeekdayDateRangePickerProps {
   predefinedRanges?: { label: string; range: [Date, Date] }[]
