@@ -42,13 +42,13 @@ const CalendarDays: React.FC<CalendarDaysProps> = ({
           key={i}
           disabled={isWeekend(dayDate)}
           onClick={() => onDateSelection(dayDate)}
-          className={`m-2 p-2  hover:border-none ${
+          className={`m-2 p-2   ${
             isWeekend(dayDate)
-              ? `text-slate-100`
-              : `text-zinc-800 hover:opacity-50`
+              ? `text-slate-100 border-slate-600  `
+              : `text-slate-800  hover:bg-stone-700 hover:text-slate-200 border-slate-600 hover:border-none `
           } ${
             isInRange
-              ? `bg-cyan-300 text-black`
+              ? `bg-blue-300 text-black`
               : isWeekend(dayDate)
               ? `bg-red-500`
               : `bg-slate-50`
